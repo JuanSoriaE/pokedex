@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <img src="./assets/logo.png" alt="Pokedex logo" id="logo">
+        <div id="pokemonForm">
+            <h2>Search Pokemon by Name</h2>
+            <input type="text" id="pokemonInput" placeholder="Pokemon Name">
+            <input type="button" value="Search Pokemon" onclick="findPokemon()" id="button">
+        </div>
+    </main>
+    <section id="pokedexContainer">
+        <!-- Left Panel -->
+        <div id="leftPanel">
+            <div id="lightsContainer">
+                <div id="bigLight"></div>
+                <div id="smallLightsContainer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="imageContainer">
+                <div id="topLightsImageContainer">
+                    <span></span><span></span>
+                </div>
+                <img src="" id="pokemonImage">
+                <div id="bottomElementsImageContainer">
+                    <span></span>
+                    <div>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div id="controllersContainer">
+                <div id="leftControllersContainer">
+                    <span></span>
+                </div>
+                <div id="midControllersContainer">
+                    <span></span><span></span>
+                    <div id="pokemonNameContainer">
+                       <p id="pokemonName"></p>
+                    </div>
+                </div>
+                <div id="rightControllersContainer">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- Mid Gear -->
+            <div id="gear">
+            </div>
+        </div>
+        
+        <!-- Right Panel -->
+        <div id="rightPanel">
+            <div id="mainScreen">
+                <p id="pokemonTypes"></p>
+                <div id="infoContainer">
+                    <p id="pokemonStats">
+                    </p>
+                    <p id="pokemonMoves">
+                    </p>
+                </div>
+                
+            </div>
+            <div id="bluePanelsContainer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="leftControllersRightPanel">
+                <div id="whitePanelsContainer">
+                    <span></span><span></span>
+                </div>
+            </div>
+            <div id="rightControllersRightPanel">
+                <span class="control"></span><span class="control"></span><br>
+                <span id="yellowLightRightPanel"></span>
+            </div>
+            <div class="infoScreen">
+                <p  id="pokemonHeight"></p>
+            </div>
+            <div class="infoScreen">
+                <p id="pokemonWeight"></p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./main.js"></script>
+</html>
